@@ -1,0 +1,96 @@
+{
+  "id": "1",
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Design Login Page",
+      "status": "Completed",
+      "priority": "High",
+      "dueDate": "2026-03-20"
+    },
+    {
+      "id": 2,
+      "title": "Build Dashboard UI",
+      "status": "In Progress",
+      "priority": "High",
+      "dueDate": "2026-03-28"
+    },
+    {
+      "id": 3,
+      "title": "API Integration",
+      "status": "Pending",
+      "priority": "Medium",
+      "dueDate": "2026-04-02"
+    },
+    {
+      "id": 4,
+      "title": "Fix Bugs",
+      "status": "Pending",
+      "priority": "Low",
+      "dueDate": "2026-04-05"
+    },
+    {
+      "id": 5,
+      "title": "Deploy Project",
+      "status": "Pending",
+      "priority": "High",
+      "dueDate": "2026-04-10"
+    }
+  ],
+  "leads": [
+    {
+      "id": 1,
+      "name": "Ravi Kumar",
+      "company": "Tech Solutions",
+      "status": "New",
+      "value": "50000"
+    },
+    {
+      "id": 2,
+      "name": "Anjali Sharma",
+      "company": "Startup Hub",
+      "status": "Contacted",
+      "value": "30000"
+    },
+    {
+      "id": 3,
+      "name": "Rahul Verma",
+      "company": "InnovateX",
+      "status": "Converted",
+      "value": "75000"
+    },
+    {
+      "id": 4,
+      "name": "Sneha Reddy",
+      "company": "NextGen Apps",
+      "status": "Follow-up",
+      "value": "40000"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Deepthi Priya",
+      "role": "Admin",
+      "status": "Active"
+    },
+    {
+      "id": 2,
+      "name": "Arjun Patel",
+      "role": "Manager",
+      "status": "Active"
+    },
+    {
+      "id": 3,
+      "name": "Meena Gupta",
+      "role": "User",
+      "status": "Inactive"
+    },
+    {
+      "id": 4,
+      "name": "Kiran Rao",
+      "role": "User",
+      "status": "Active"
+    }
+  ]
+}
