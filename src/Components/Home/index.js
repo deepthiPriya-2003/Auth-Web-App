@@ -17,10 +17,8 @@ class Home extends Component{
 
 
   getDashboardData = async () => {
-    
-    
-  try {
-    const response = await fetch("/DashboardData.json")
+      try {
+        const response = await fetch("/DashboardData.json")
 
     if (!response.ok) {
       throw new Error("Failed to fetch data")
@@ -59,9 +57,9 @@ class Home extends Component{
 
         <div className="nav-right">
           <div className="nav-tabs">
-            <Link to="/tasks" className="link-items"><p>Tasks</p></Link>
-            <Link to="/leads" className="link-items"><p>Leads</p></Link>
-            <Link to="/users" className="link-items"><p>Users</p></Link>
+            <p>Tasks</p>
+           <p>Leads</p>
+           <p>Users</p>
           </div>
           <button className="logout-btn" onClick={this.onLogout}>
             Logout
@@ -74,7 +72,7 @@ class Home extends Component{
     <h2 className="section-title">Tasks</h2>
     
     <div className="row-cards">
-         {this.state.tasks.map(task => (
+         {tasks.map(task => (
       <div key={task.id} className="task-card">
         <h3>{task.title}</h3>
         <p className={`status ${task.status.toLowerCase()}`}>
@@ -92,7 +90,7 @@ class Home extends Component{
   <div className="section">
     <h2 className="section-title">Leads</h2>
     <div className="row-cards">
-      {this.state.leads.map(lead => (
+      {leads.map(lead => (
       <div key={lead.id} className="lead-card">
         <h3>{lead.name}</h3>
         <p>{lead.company}</p>
@@ -109,7 +107,7 @@ class Home extends Component{
   <div className="section">
     <h2 className="section-title">Users</h2>
     <div className="row-cards">
-      {this.state.users.map(user => (
+      {users.map(user => (
       <div key={user.id} className="user-card">
         <h3>{user.name}</h3>
         <p>{user.role}</p>
