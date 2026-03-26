@@ -1,5 +1,5 @@
 import {Component} from "react" 
-import {Link, Navigate} from "react-router-dom"; 
+import {Navigate} from "react-router-dom"; 
 import Cookies from "js-cookie"
 import "./index.css" 
 

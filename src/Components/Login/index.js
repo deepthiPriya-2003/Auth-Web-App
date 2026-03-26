@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 import "./index.css" 
 
 class Login extends Component { 
-      state={isLoggedIn:"", userName:"",email:"", password:"", nameErr:false, passwordErr:false, isErr:false}
+      state={isLoggedIn:false, userName:"",email:"", password:"", nameErr:false, passwordErr:false, isErr:false}
      
     onChangeName =(event)=>{ 
         this.setState({userName:event.target.value, isErr:false, nameErr:false})
@@ -57,7 +57,7 @@ class Login extends Component {
     }
 
     render(){ 
-      const {userName, password, isErr, isLoggedIn, nameErr, passwordErr} = this.state
+      const {userName, isErr, isLoggedIn, nameErr, passwordErr} = this.state
         if (isLoggedIn === true){
             return <Navigate to="/" />
          }
